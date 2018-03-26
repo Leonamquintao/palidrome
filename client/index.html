@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="shaw" ng-controller="PalidromeCtrl">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Shaw & Partners</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="images/ico.png" />
+    <script src="js/lib/angular.min.js"></script>
+    <script src="js/palidrome.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="logo">
+       <img src="images/logo.png" alt="">
+     </div>
+
+      <form class="frm">
+        <input class="form-control" type="text" placeholder="enter the expression..." ng-model="phrase">
+        <button class="btn btn-primary" ng-click="checkPhrase(phrase)">Send</button>
+      </form>
+
+      <table>
+
+        <tr>
+          <th>INPUT</th>
+          <th>RESULT</th>
+        </tr>
+
+        <tr ng-repeat="word in words">
+          <td >{{ word.txt }}</td>
+          <td ng-if="word.status == 200">IS A PALIDROME</td>
+          <td ng-if="word.status == 400">IS NOT A PALIDROME</td>
+        </tr>
+
+      </table>
+
+    </div>
+
+    <script type="text/javascript" src="js/palidrome.js"></script>
+
+  </body>
+</html>

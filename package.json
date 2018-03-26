@@ -1,7 +1,7 @@
 {
   "name": "palidrome",
   "version": "1.0.0",
-  "description": "project destinated to Shaw&Partners test",
+  "description": "Project destinated to Shaw&Partners test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/Leonamquintao/palidrome/issues"
   },
-  "homepage": "https://github.com/Leonamquintao/palidrome#readme"
+  "homepage": "https://github.com/Leonamquintao/palidrome#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
 }
